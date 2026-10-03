@@ -1,0 +1,60 @@
+{
+  "topics": [
+    {
+      "id": "decorators",
+      "name": "Python Decorators & Wrappers",
+      "category": "Functions & Metaprogramming",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Functions that modify the behavior of other functions or methods without permanently modifying them."
+    },
+    {
+      "id": "generators",
+      "name": "Generators & Yield Statements",
+      "category": "Iterators & Memory Optimization",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Functions that pause execution and yield values one at a time to conserve memory."
+    },
+    {
+      "id": "asyncio",
+      "name": "Asyncio Event Loops & Coroutines",
+      "category": "Concurrency & Asynchronous I/O",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Cooperative multitasking and non-blocking asynchronous I/O using async/await."
+    },
+    {
+      "id": "context_managers",
+      "name": "Context Managers & with Statement",
+      "category": "Resource Management",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Automatic acquisition and release of resources using __enter__ and __exit__ protocols."
+    },
+    {
+      "id": "lists_comprehensions",
+      "name": "List Comprehensions & Walrus Operator",
+      "category": "Data Structures & Syntax",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Concise syntactical constructs to build lists from iterables with inline assignment."
+    },
+    {
+      "id": "metaclasses",
+      "name": "Metaclasses & Class Construction",
+      "category": "Object-Oriented & Metaprogramming",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Classes of classes that govern how class objects are constructed and validated at import time."
+    },
+    {
+      "id": "exceptions",
+      "name": "Exception Handling & Custom Error Hierarchies",
+      "category": "Control Flow & Reliability",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Graceful handling of runtime faults using try, except, else, finally and custom exception classes."
+    },
+    {
+      "id": "classes_dunder",
+      "name": "Object-Oriented Programming & Magic Methods",
+      "category": "Object-Oriented Programming",
+      "difficulties": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Class encapsulation, inheritance, and overloading standard Python behavior via dunder methods."
+    }
+  ]
+}

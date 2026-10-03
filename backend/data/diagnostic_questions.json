@@ -1,0 +1,116 @@
+{
+  "diagnostic_assessment": [
+    {
+      "id": "diag_q1",
+      "topic": "Variables",
+      "question": "In Python, which statement accurately describes variable assignment (e.g., `a = [1, 2]`; `b = a`)?",
+      "options": [
+        "b creates a deep independent duplicate copy in memory.",
+        "b references the exact same mutable list object in memory as a.",
+        "a is deleted from memory as soon as b is assigned.",
+        "b creates a read-only immutable copy of a."
+      ],
+      "correct_answer": "B",
+      "answer_idx": 1,
+      "explanation": "In Python, assignment binds a name to an object reference. `b = a` assigns the reference of the list to `b`, so modifying `b` also affects `a`."
+    },
+    {
+      "id": "diag_q2",
+      "topic": "Conditions",
+      "question": "What is the evaluated output of the expression `bool([]) or bool('False') and not bool(0)`?",
+      "options": [
+        "False",
+        "True",
+        "None",
+        "Raises a TypeError"
+      ],
+      "correct_answer": "B",
+      "answer_idx": 1,
+      "explanation": "bool([]) is False. Non-empty string 'False' has truth value True. bool(0) is False, so `not False` is True. `True and True` is True, and `False or True` yields True."
+    },
+    {
+      "id": "diag_q3",
+      "topic": "Loops",
+      "question": "When does the `else` block attached to a `for` or `while` loop execute in Python?",
+      "options": [
+        "Only when the loop encounters an unexpected exception.",
+        "Every single time the loop finishes an iteration.",
+        "When the loop finishes naturally without encountering a `break` statement.",
+        "Only if the loop body never ran at all (0 iterations)."
+      ],
+      "correct_answer": "C",
+      "answer_idx": 2,
+      "explanation": "In Python, a loop's `else` clause runs when the loop completes naturally without being interrupted by a `break`."
+    },
+    {
+      "id": "diag_q4",
+      "topic": "Functions",
+      "question": "What happens when you define `def append_item(item, target_list=[]):` and call it multiple times without passing `target_list`?",
+      "options": [
+        "A fresh empty list is instantiated every time the function is called.",
+        "The default list is created once at function definition time, accumulating items across calls.",
+        "Python raises a `SyntaxError: mutable default argument not permitted`.",
+        "The function executes but the list is discarded immediately when returning."
+      ],
+      "correct_answer": "B",
+      "answer_idx": 1,
+      "explanation": "Default argument expressions are evaluated once when the function is defined. A mutable default like `[]` is shared across all subsequent invocations."
+    },
+    {
+      "id": "diag_q5",
+      "topic": "Lists",
+      "question": "Given `data = [1, 2, 3, 4, 5]`, what does the slicing expression `data[::-2]` return?",
+      "options": [
+        "[5, 3, 1]",
+        "[1, 3, 5]",
+        "[4, 2]",
+        "[5, 4, 3, 2, 1]"
+      ],
+      "correct_answer": "A",
+      "answer_idx": 0,
+      "explanation": "A negative step `-2` reverses the traversal, starting from the last item (5) and taking every second element: [5, 3, 1]."
+    },
+    {
+      "id": "diag_q6",
+      "topic": "Dictionaries",
+      "question": "Which of the following objects CANNOT be used as a key in a standard Python dictionary?",
+      "options": [
+        "A tuple containing strings: `('host', 'port')`",
+        "A frozen set: `frozenset([1, 2])`",
+        "A tuple containing a list: `('config', [8080])`",
+        "An integer: `42`"
+      ],
+      "correct_answer": "C",
+      "answer_idx": 2,
+      "explanation": "Dictionary keys must be hashable. While tuples are generally hashable, a tuple containing an unhashable mutable object (such as a list) raises `TypeError: unhashable type: 'list'`."
+    },
+    {
+      "id": "diag_q7",
+      "topic": "Classes",
+      "question": "In Python OOP, what is the fundamental difference between a `@classmethod` and a `@staticmethod`?",
+      "options": [
+        "@classmethod receives the class `cls` as its first argument; @staticmethod receives neither `self` nor `cls`.",
+        "@staticmethod can modify instance state; @classmethod cannot.",
+        "@classmethod cannot be called on an instance, only on the class directly.",
+        "@staticmethod requires an explicit global scope declaration."
+      ],
+      "correct_answer": "A",
+      "answer_idx": 0,
+      "explanation": "@classmethod receives the class object as its first argument (`cls`), useful for alternative factory constructors. @staticmethod is a plain function scoped inside the class namespace."
+    },
+    {
+      "id": "diag_q8",
+      "topic": "Exceptions",
+      "question": "In a `try...except...else...finally` structure, when does the `else` block execute?",
+      "options": [
+        "Whenever an unhandled exception propagates up the call stack.",
+        "Only when an exception was caught and handled in the `except` block.",
+        "When the `try` block completes successfully without raising any exception.",
+        "Regardless of whether an exception occurred or not."
+      ],
+      "correct_answer": "C",
+      "answer_idx": 2,
+      "explanation": "The `else` block in exception handling executes only if the code in the `try` block completed without raising any exception."
+    }
+  ]
+}
